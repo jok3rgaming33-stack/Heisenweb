@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeisenWeb • Systèmes Digitaux Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.03em; }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .section-title {
+            font-size: 3.5rem;
+            line-height: 1.05;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+        }
+
+        .premium-card {
+            transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1), 
+                        box-shadow 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .premium-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 70px -15px rgb(0 0 0 / 0.4);
+        }
+
+        .nav-scrolled {
+            background: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(20px);
+        }
+
+        .logo-bg {
+            background-image: url('logoweb.png'); /* ← Mets ton logo ici */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.06;
+            mix-blend-mode: luminosity;
+        }
+    </style>
+</head>
+<body class="bg-[#0A0A0A] text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <img src="logoweb.png" alt="HeisenWeb" class="w-11 h-11 rounded-full object-cover border border-white/20">
+                <div class="flex items-baseline -ml-1">
+                    <span class="font-display text-[26px] font-semibold tracking-[-1.2px]">Heisen</span>
+                    <span class="font-display text-[26px] font-semibold tracking-[-1.2px] text-[#67E8F9]">Web</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                <a href="#packs" class="hover:text-[#67E8F9] transition-colors">Les packs</a>
+                <a href="#pourquoi" class="hover:text-[#67E8F9] transition-colors">Pourquoi moi</a>
+                <a href="#portfolio" class="hover:text-[#67E8F9] transition-colors">Résultats</a>
+            </div>
+
+            <a href="#contact" class="px-6 py-2.5 text-sm font-semibold bg-white text-[#0A0A0A] rounded-2xl hover:bg-[#D4AF77] transition-all">
+                Réserver un appel
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO avec logo en fond fondu -->
+    <div class="relative pt-20 pb-20 overflow-hidden">
+        <!-- Fond logo fondu -->
+        <div class="absolute inset-0 logo-bg bg-[length:110%] md:bg-[length:85%] bg-center" 
+             style="background-image: url('logoweb.png'); opacity: 0.07;"></div>
+        
+        <div class="max-w-5xl mx-auto px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-x-2 px-5 py-2 rounded-full glass mb-8 text-sm">
+                <div class="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span class="font-medium tracking-[1px] text-white/80">SYSTÈME UTILISÉ PAR MOI-MÊME • RÉSULTATS RÉELS</span>
+            </div>
+
+            <h1 class="section-title max-w-[18ch] mx-auto leading-[1.02]">
+                Tu n’as pas besoin<br>d’être ingénieur.<br>
+                <span class="bg-gradient-to-r from-[#D4AF77] via-[#E8C99A] to-[#D4AF77] bg-clip-text text-transparent">Tu as juste besoin du bon système.</span>
+            </h1>
+
+            <p class="mt-6 text-xl text-white/70 max-w-[42ch] mx-auto">
+                Je te construis le même système que j’utilise pour mon propre business.<br>
+                Site premium + Application Android + Dashboard complet + Carte interactive.
+            </p>
+
+            <div class="mt-10 flex justify-center gap-x-4">
+                <a href="#packs" class="px-9 py-4 bg-white text-[#0A0A0A] font-semibold rounded-2xl text-[15px] flex items-center gap-x-3 hover:bg-[#D4AF77] active:scale-[0.985] transition-all">
+                    Découvrir les packs
+                </a>
+                <a href="#pourquoi" class="px-9 py-4 border border-white/25 hover:bg-white/5 font-medium rounded-2xl text-[15px] flex items-center gap-x-3 transition-all">
+                    Pourquoi c’est différent
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PREUVE SOCIALE -->
+    <div class="max-w-5xl mx-auto px-8 pb-16">
+        <div class="glass rounded-3xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-y-6">
+            <div class="flex items-center gap-x-8">
+                <div>
+                    <div class="text-5xl font-semibold tracking-tighter">2 160</div>
+                    <div class="text-sm text-white/60 mt-1">visiteurs uniques en 30 jours</div>
+                </div>
+                <div class="h-9 w-px bg-white/10"></div>
+                <div>
+                    <div class="text-5xl font-semibold tracking-tighter">100%</div>
+                    <div class="text-sm text-white/60 mt-1">géré depuis mon téléphone</div>
+                </div>
+            </div>
+            <div class="text-sm text-white/60 max-w-[260px]">
+                C’est le même système que j’utilise tous les jours pour mon business. Pas de théorie.
+            </div>
+        </div>
+    </div>
+
+    <!-- POURQUOI C'EST DIFFÉRENT -->
+    <div id="pourquoi" class="max-w-6xl mx-auto px-8 py-16">
+        <div class="text-center mb-12">
+            <div class="text-[#67E8F9] text-xs tracking-[3px] font-semibold mb-3">CE QUI CHANGE TOUT</div>
+            <h2 class="section-title">Ce n’est pas un site.<br>C’est un système de vente.</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass rounded-3xl p-8">
+                <div class="text-[#67E8F9] mb-4"><i class="fa-solid fa-clock text-3xl"></i></div>
+                <div class="font-semibold text-xl mb-3">Tu gagnes du temps</div>
+                <p class="text-white/70">Fini les prises de commande à la main, les Excel et les groupes WhatsApp. Tout est centralisé et automatisé.</p>
+            </div>
+            <div class="glass rounded-3xl p-8">
+                <div class="text-[#67E8F9] mb-4"><i class="fa-solid fa-chart-line text-3xl"></i></div>
+                <div class="font-semibold text-xl mb-3">Tu vends plus</div>
+                <p class="text-white/70">Un site premium + une app fluide + un programme de fidélité bien pensé = plus de commandes et plus de clients qui reviennent.</p>
+            </div>
+            <div class="glass rounded-3xl p-8">
+                <div class="text-[#67E8F9] mb-4"><i class="fa-solid fa-shield-halved text-3xl"></i></div>
+                <div class="font-semibold text-xl mb-3">Tu as l’air pro</div>
+                <p class="text-white/70">Dès le premier contact, tes clients voient que tu es sérieux. Ça change tout dans la perception et dans tes tarifs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LES PACKS -->
+    <div id="packs" class="max-w-7xl mx-auto px-8 py-16">
+        <div class="text-center mb-12">
+            <div class="text-[#67E8F9] text-xs tracking-[3px] font-semibold mb-3">DES NIVEAUX ADAPTÉS À TON AMBITION</div>
+            <h2 class="section-title">Choisis le niveau<br>qui te correspond</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+            
+            <!-- LAB -->
+            <div class="premium-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-4xl font-semibold tracking-tighter">LAB</span>
+                        <span class="px-4 py-1 text-xs font-medium bg-white/10 rounded-full">LE DÉMARRAGE</span>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-6xl font-semibold tracking-tighter">1 400</span>
+                        <span class="text-white/60">€</span>
+                        <div class="text-sm text-white/60">ou <span class="font-medium">99 €/mois</span></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 space-y-[13px] text-[15px]">
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Site vitrine premium</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Carte interactive (10km)</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Dashboard admin simple</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Programme de fidélité</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> 1 mois de support</div>
+                </div>
+
+                <a href="#contact" class="mt-8 block text-center py-[17px] rounded-2xl border border-white/30 hover:bg-white/5 font-medium transition-all">Choisir LAB</a>
+            </div>
+
+            <!-- COOK -->
+            <div class="premium-card glass rounded-3xl p-8 border-2 border-[#D4AF77] flex flex-col relative">
+                <div class="absolute -top-3.5 right-7 bg-[#D4AF77] text-[#0A0A0A] text-xs font-bold px-5 py-1.5 rounded-full tracking-wider">LE PLUS CHOISI</div>
+                
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-4xl font-semibold tracking-tighter">COOK</span>
+                        <span class="px-4 py-1 text-xs font-medium bg-[#D4AF77]/10 text-[#D4AF77] rounded-full">L’OPÉRATION</span>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-6xl font-semibold tracking-tighter">2 900</span>
+                        <span class="text-white/60">€</span>
+                        <div class="text-sm text-white/60">ou <span class="font-medium">169 €/mois</span></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 space-y-[13px] text-[15px]">
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> <span class="font-medium">Tout ce qui est dans LAB</span></div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Application Android Flutter complète</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Dashboard admin avancé</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Messages WhatsApp automatisés</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> 3 mois de support + 2 optimisations</div>
+                </div>
+
+                <a href="#contact" class="mt-8 block text-center py-[17px] bg-[#D4AF77] text-[#0A0A0A] rounded-2xl font-semibold hover:bg-[#E8C99A] transition-all">Choisir COOK</a>
+            </div>
+
+            <!-- EMPIRE -->
+            <div class="premium-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-4xl font-semibold tracking-tighter">EMPIRE</span>
+                        <span class="px-4 py-1 text-xs font-medium bg-white/10 rounded-full">LA DOMINATION</span>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-6xl font-semibold tracking-tighter">5 400</span>
+                        <span class="text-white/60">€</span>
+                        <div class="text-sm text-white/60">ou <span class="font-medium">329 €/mois</span></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 space-y-[13px] text-[15px]">
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> <span class="font-medium">Tout ce qui est dans COOK</span></div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Création de contenus visuels</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Stratégie mensuelle + 1 appel</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Automatisations avancées</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9] mt-[3px]"></i> Accès prioritaire & évolutions continues</div>
+                </div>
+
+                <a href="#contact" class="mt-8 block text-center py-[17px] rounded-2xl border border-white/30 hover:bg-white/5 font-medium transition-all">Choisir EMPIRE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="max-w-6xl mx-auto px-8 py-16">
+        <div class="text-center mb-10">
+            <div class="text-[#67E8F9] text-xs tracking-[3px] font-semibold mb-3">RÉSULTATS CONCRETS</div>
+            <h2 class="section-title">Ce que j’ai déjà construit</h2>
+        </div>
+
+        <div class="glass rounded-3xl p-10">
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="flex-1">
+                    <div class="font-semibold text-2xl">LaCastilla33</div>
+                    <div class="text-white/70 mt-2">Business lifestyle &amp; livraison locale</div>
+                    
+                    <div class="mt-6 space-y-3 text-sm">
+                        <div class="flex items-center gap-x-3"><i class="fa-solid fa-check text-emerald-400"></i> Site premium + Application Android</div>
+                        <div class="flex items-center gap-x-3"><i class="fa-solid fa-check text-emerald-400"></i> Dashboard complet + Carte interactive</div>
+                        <div class="flex items-center gap-x-3"><i class="fa-solid fa-check text-emerald-400"></i> +2 160 visiteurs en 30 jours</div>
+                        <div class="flex items-center gap-x-3"><i class="fa-solid fa-check text-emerald-400"></i> Programme de fidélité actif</div>
+                    </div>
+                </div>
+                <div class="flex-1 text-white/70 text-[15px]">
+                    C’est exactement le même système que je te propose.<br>
+                    Je ne te vends pas quelque chose que je n’utilise pas moi-même.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA FINAL -->
+    <div id="contact" class="max-w-3xl mx-auto px-8 py-20 text-center">
+        <h2 class="section-title">Prêt à arrêter de bricoler ?</h2>
+        <p class="mt-4 text-xl text-white/70">Réserve un appel de 20 minutes. Je t’analyse ton business et je te montre précisément ce que je peux te construire.</p>
+        
+        <div class="mt-10">
+            <a href="#" onclick="alert('Remplace ce lien par ton WhatsApp ou Calendly'); return false;" 
+               class="inline-flex items-center justify-center gap-x-3 px-10 py-5 bg-white text-[#0A0A0A] rounded-2xl text-lg font-semibold hover:bg-[#D4AF77] active:scale-[0.985] transition-all">
+                Je réserve mon appel
+            </a>
+        </div>
+        <div class="mt-5 text-xs text-white/50 tracking-wider">RÉPONSE SOUS 24H • SANS ENGAGEMENT</div>
+    </div>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
