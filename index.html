@@ -18,29 +18,11 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .section-title {
-            font-size: 3.25rem;
-            line-height: 1.05;
-            font-weight: 700;
-            letter-spacing: -0.045em;
-        }
-
-        .premium-card {
-            transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1), 
-                        box-shadow 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
-        }
-        
-        .premium-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 35px 80px -15px rgb(0 0 0 / 0.45);
-        }
-
         .nav-scrolled {
             background: rgba(10, 10, 10, 0.92);
             backdrop-filter: blur(20px);
         }
 
-        /* Logo en arrière-plan fondu en bas de page */
         .logo-bg {
             position: fixed;
             bottom: -60px;
@@ -60,7 +42,6 @@
 </head>
 <body class="bg-[#0A0A0A] text-white">
 
-    <!-- NAVBAR -->
     <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
             <div class="flex items-center gap-x-3">
@@ -76,51 +57,44 @@
                 <a href="#pourquoi" class="hover:text-[#67E8F9] transition-colors">Pourquoi moi</a>
                 <a href="#resultats" class="hover:text-[#67E8F9] transition-colors">Résultats</a>
             </div>
-
-            <a href="#contact" class="px-6 py-2.5 text-sm font-semibold bg-white text-[#0A0A0A] rounded-2xl hover:bg-[#D4AF77] transition-all">
-                Réserver un appel
-            </a>
         </div>
     </nav>
 
-    <!-- HERO AVEC FUMÉE -->
-    <div class="relative pt-16 pb-24 overflow-hidden min-h-[92vh] flex items-center">
-        <!-- Vidéo fumée en arrière-plan -->
+    <div class="relative pt-36 pb-20 overflow-hidden">
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-45">
             <source src="smoke-effect/smoke.mp4" type="video/mp4">
         </video>
         
         <div class="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/70 via-[#0A0A0A]/55 to-[#0A0A0A] z-10"></div>
 
-        <div class="max-w-5xl mx-auto px-8 relative z-20 text-center pt-14">
+        <div class="max-w-5xl mx-auto px-8 relative z-20 text-center pt-2">
             <div class="inline-flex items-center gap-x-2 px-5 py-2 rounded-full glass mb-8 text-sm border border-white/10">
                 <div class="w-1.5 h-1.5 bg-[#D4AF77] rounded-full animate-pulse"></div>
-                <span class="font-medium tracking-[1.5px] text-white/80">SYSTÈME PROUVÉ • CRÉÉ PAR MOI POUR MOI</span>
+                <span class="font-medium tracking-[1.5px] text-white/80">SYSTÈME PROUVÉ • IMAGINÉ POUR VOUS</span>
             </div>
 
             <h1 class="max-w-[22ch] mx-auto text-[58px] md:text-[72px] leading-[1.02] font-semibold tracking-[-4px]">
-                Arrête de bricoler.<br>
+                Arrête les réseaux qui sautent.<br>
                 <span class="bg-gradient-to-r from-white via-[#D4AF77] to-white bg-clip-text text-transparent">
                     Construis un vrai système.
                 </span>
             </h1>
 
             <p class="mt-6 text-2xl text-white/75 max-w-[42ch] mx-auto tracking-[-0.3px]">
-                Le même système que j’utilise pour mon propre business.<br>
+                Système professionnel.<br>
                 Site premium + Application Android + Dashboard complet.
             </p>
 
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#packs" class="px-10 py-4 bg-white text-[#0A0A0A] font-semibold rounded-2xl text-lg flex items-center justify-center gap-x-3 hover:bg-[#D4AF77]">Voir les packs</a>
+            <div class="mt-12 flex flex-col sm:flex-row justify-center gap-9">
+                <a href="#packs" class="px-20 py-4 bg-white text-[#0A0A0A] font-semibold rounded-2xl text-lg flex items-center justify-center gap-x-9 hover:bg-[#D4AF77]">Voir les packs</a>
                 <a href="#pourquoi" class="px-10 py-4 border border-white/30 hover:bg-white/5 font-medium rounded-2xl text-lg flex items-center justify-center gap-x-3">Pourquoi c’est différent</a>
             </div>
         </div>
     </div>
 
-    <!-- STATS -->
-    <div class="max-w-5xl mx-auto px-8 pb-16">
+    <div class="max-w-5xl mx-auto px-1 pb-2">
         <div class="glass rounded-3xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-y-6">
-            <div class="flex items-center gap-x-10">
+            <div class="flex items-center gap-x-20">
                 <div>
                     <div class="text-6xl font-semibold tracking-tighter">2 160</div>
                     <div class="text-sm text-white/60 mt-1">visiteurs uniques en 30 jours</div>
@@ -132,16 +106,15 @@
                 </div>
             </div>
             <div class="text-sm text-white/70 max-w-[280px]">
-                Ce n’est pas une promesse. C’est le système que j’utilise tous les jours.
+                FAIS EXPLOSER TES ABONNE(E)S.
             </div>
         </div>
     </div>
 
-    <!-- POURQUOI MOI -->
     <div id="pourquoi" class="max-w-6xl mx-auto px-8 py-20">
         <div class="text-center mb-14">
-            <div class="text-[#67E8F9] text-xs tracking-[3px] font-semibold mb-3">CE QUI CHANGE VRAIMENT</div>
-            <h2 class="text-5xl md:text-6xl font-bold tracking-tighter">Ce n’est pas un site.<br>C’est un avantage compétitif.</h2>
+            <div class="text-[#67E8F9] text-sm tracking-[10px] font-semibold mb-8">CE QUI CHANGE VRAIMENT</div>
+            <h2 class="text-6xl md:text-7xl font-bold tracking-tighter">Ce n’est pas un site.<br>C’est un avantage compétitif.</h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -165,24 +138,21 @@
         </div>
     </div>
 
-    <!-- LES PACKS -->
     <div id="packs" class="max-w-7xl mx-auto px-8 py-16">
         <div class="text-center mb-12">
-            <div class="text-[#67E8F9] text-xs tracking-[3px] font-semibold mb-3">DES NIVEAUX ADAPTÉS À TON AMBITION</div>
-            <h2 class="section-title">Choisis le niveau<br>qui te correspond</h2>
+            <div class="text-[#67E8F9] text-sm tracking-[10px] font-semibold mb-8">DES NIVEAUX ADAPTÉS À TON AMBITION</div>
+            <h2 class="text-6xl md:text-7xl font-bold tracking-tighter">Choisis le niveau<br>qui te correspond</h2>
         </div>
 
         <div class="grid lg:grid-cols-3 gap-6">
-            <!-- LAB -->
             <div class="premium-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
                 <div class="flex items-center justify-between mb-6">
                     <span class="text-4xl font-semibold tracking-tighter">LAB</span>
                     <span class="px-4 py-1 text-xs font-medium bg-white/10 rounded-full">LE DÉMARRAGE</span>
                 </div>
                 <div class="mb-8">
-                    <span class="text-6xl font-semibold tracking-tighter">1 400</span>
+                    <span class="text-6xl font-semibold tracking-tighter">1500</span>
                     <span class="text-white/60">€</span>
-                    <div class="text-sm text-white/60">ou <span class="font-medium">99 €/mois</span></div>
                 </div>
                 <div class="flex-1 space-y-3 text-[15px]">
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Site vitrine premium</div>
@@ -191,10 +161,8 @@
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Programme de fidélité</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> 1 mois de support</div>
                 </div>
-                <a href="#contact" class="mt-8 block text-center py-4 rounded-2xl border border-white/30 hover:bg-white/5 font-medium transition-all">Choisir LAB</a>
             </div>
 
-            <!-- COOK -->
             <div class="premium-card glass rounded-3xl p-8 border-2 border-[#D4AF77] flex flex-col relative">
                 <div class="absolute -top-3.5 right-7 bg-[#D4AF77] text-[#0A0A0A] text-xs font-bold px-5 py-1.5 rounded-full tracking-wider">LE PLUS CHOISI</div>
                 <div class="flex items-center justify-between mb-6">
@@ -202,9 +170,8 @@
                     <span class="px-4 py-1 text-xs font-medium bg-[#D4AF77]/10 text-[#D4AF77] rounded-full">L’OPÉRATION</span>
                 </div>
                 <div class="mb-8">
-                    <span class="text-6xl font-semibold tracking-tighter">2 900</span>
+                    <span class="text-6xl font-semibold tracking-tighter">3000</span>
                     <span class="text-white/60">€</span>
-                    <div class="text-sm text-white/60">ou <span class="font-medium">169 €/mois</span></div>
                 </div>
                 <div class="flex-1 space-y-3 text-[15px]">
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Tout ce qui est dans LAB</div>
@@ -213,19 +180,16 @@
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Messages WhatsApp automatisés</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> 3 mois de support + 2 optimisations</div>
                 </div>
-                <a href="#contact" class="mt-8 block text-center py-4 bg-[#D4AF77] text-[#0A0A0A] rounded-2xl font-semibold hover:bg-[#E8C99A] transition-all">Choisir COOK</a>
             </div>
 
-            <!-- EMPIRE -->
             <div class="premium-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
                 <div class="flex items-center justify-between mb-6">
                     <span class="text-4xl font-semibold tracking-tighter">EMPIRE</span>
                     <span class="px-4 py-1 text-xs font-medium bg-white/10 rounded-full">LA DOMINATION</span>
                 </div>
                 <div class="mb-8">
-                    <span class="text-6xl font-semibold tracking-tighter">5 400</span>
+                    <span class="text-6xl font-semibold tracking-tighter">4500</span>
                     <span class="text-white/60">€</span>
-                    <div class="text-sm text-white/60">ou <span class="font-medium">329 €/mois</span></div>
                 </div>
                 <div class="flex-1 space-y-3 text-[15px]">
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Tout ce qui est dans COOK</div>
@@ -234,16 +198,14 @@
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Automatisations avancées</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Accès prioritaire & évolutions continues</div>
                 </div>
-                <a href="#contact" class="mt-8 block text-center py-4 rounded-2xl border border-white/30 hover:bg-white/5 font-medium transition-all">Choisir EMPIRE</a>
             </div>
         </div>
     </div>
 
-    <!-- SECTION CE QUE J'AI DÉJÀ CONSTRUIT -->
     <div id="resultats" class="max-w-6xl mx-auto px-8 py-20">
         <div class="text-center mb-12">
-            <div class="text-[#67E8F9] text-xs tracking-[3px] font-semibold mb-3">RÉSULTATS RÉELS</div>
-            <h2 class="section-title">Ce que j'ai déjà construit</h2>
+            <div class="text-[#67E8F9] text-sm tracking-[10px] font-semibold mb-8">RÉSULTATS RÉELS</div>
+            <h2 class="text-6xl md:text-7xl font-bold tracking-tighter">Ce que j'ai déjà construit</h2>
         </div>
 
         <div class="glass rounded-3xl p-10 border border-white/10">
@@ -281,7 +243,7 @@
                             </div>
                         </div>
                         <div class="relative">
-                            <img src="https://picsum.photos/id/1015/800/420" class="w-full h-[260px] object-cover brightness-75 group-hover:brightness-90 transition">
+                            <img src="demo-preview.jpg" class="w-full h-[260px] object-cover brightness-75 group-hover:brightness-90 transition">
                             <div class="absolute inset-0 flex items-center justify-center bg-black/40">
                                 <div class="text-center">
                                     <div class="w-20 h-20 mx-auto bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
@@ -298,20 +260,11 @@
         </div>
     </div>
 
-    <!-- CTA FINAL -->
     <div id="contact" class="max-w-3xl mx-auto px-8 py-20 text-center">
-        <h2 class="section-title">Prêt à arrêter de bricoler ?</h2>
-        <p class="mt-4 text-xl text-white/70">Réserve un appel de 20 minutes. Je t’analyse ton business et je te montre précisément ce que je peux te construire.</p>
-        
-        <div class="mt-10">
-            <a href="#" onclick="alert('Remplace ce lien par ton WhatsApp ou Calendly'); return false;" 
-               class="inline-flex items-center justify-center gap-x-3 px-10 py-5 bg-white text-[#0A0A0A] rounded-2xl text-lg font-semibold hover:bg-[#D4AF77]">
-                Je réserve mon appel
-            </a>
-        </div>
+        <h2 class="text-6xl md:text-7xl font-bold tracking-tighter">Prêt à passer à la vitesse supérieure ?</h2>
+        <p class="mt-8 text-xl text-white/70">J’analyse ton business et je te montre précisément ce que je peux te construire.</p>
     </div>
 
-    <!-- Logo discret en bas de page -->
     <div class="logo-bg hidden md:block"></div>
 
     <script>
