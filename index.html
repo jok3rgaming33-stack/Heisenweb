@@ -42,6 +42,7 @@
 </head>
 <body class="bg-[#0A0A0A] text-white">
 
+    <!-- NAVBAR -->
     <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
             <div class="flex items-center gap-x-3">
@@ -56,10 +57,12 @@
                 <a href="#packs" class="hover:text-[#67E8F9] transition-colors">Les packs</a>
                 <a href="#pourquoi" class="hover:text-[#67E8F9] transition-colors">Pourquoi moi</a>
                 <a href="#resultats" class="hover:text-[#67E8F9] transition-colors">Résultats</a>
+                <a href="#support" class="hover:text-[#67E8F9] transition-colors">Support</a>
             </div>
         </div>
     </nav>
 
+    <!-- HERO -->
     <div class="relative pt-36 pb-20 overflow-hidden">
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-45">
             <source src="smoke-effect/smoke.mp4" type="video/mp4">
@@ -92,6 +95,7 @@
         </div>
     </div>
 
+    <!-- STATS -->
     <div class="max-w-5xl mx-auto px-1 pb-2">
         <div class="glass rounded-3xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-y-6">
             <div class="flex items-center gap-x-20">
@@ -111,6 +115,7 @@
         </div>
     </div>
 
+    <!-- POURQUOI MOI -->
     <div id="pourquoi" class="max-w-6xl mx-auto px-8 py-20">
         <div class="text-center mb-14">
             <div class="text-[#67E8F9] text-sm tracking-[10px] font-semibold mb-8">CE QUI CHANGE VRAIMENT</div>
@@ -138,6 +143,7 @@
         </div>
     </div>
 
+    <!-- LES PACKS -->
     <div id="packs" class="max-w-7xl mx-auto px-8 py-16">
         <div class="text-center mb-12">
             <div class="text-[#67E8F9] text-sm tracking-[10px] font-semibold mb-8">DES NIVEAUX ADAPTÉS À TON AMBITION</div>
@@ -145,15 +151,18 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-6">
+
+            <!-- LAB -->
             <div class="premium-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
                 <div class="flex items-center justify-between mb-6">
                     <span class="text-4xl font-semibold tracking-tighter">LAB</span>
                     <span class="px-4 py-1 text-xs font-medium bg-white/10 rounded-full">LE DÉMARRAGE</span>
                 </div>
                 <div class="mb-8">
-                    <span class="text-6xl font-semibold tracking-tighter">1000</span>
+                    <span class="text-6xl font-semibold tracking-tighter">1300</span>
                     <span class="text-white/60">€</span>
                 </div>
+
                 <div class="flex-1 space-y-3 text-[15px]">
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Site vitrine premium</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Carte interactive (10km)</div>
@@ -161,8 +170,20 @@
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Programme de fidélité</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> 1 mois de support</div>
                 </div>
+
+                <div class="mt-6 pt-5 border-t border-white/10">
+                    <p class="font-semibold text-sm mb-2">Temps de travail estimé : ~30 heures</p>
+                    <div class="text-[13px] text-white/70 leading-snug">
+                        • Analyse & brief : 3h<br>
+                        • Design du site premium : 10h<br>
+                        • Carte interactive + dashboard : 8h<br>
+                        • Programme de fidélité : 5h<br>
+                        • Tests, mise en ligne & formation : 4h
+                    </div>
+                </div>
             </div>
 
+            <!-- COOK -->
             <div class="premium-card glass rounded-3xl p-8 border-2 border-[#D4AF77] flex flex-col relative">
                 <div class="absolute -top-3.5 right-7 bg-[#D4AF77] text-[#0A0A0A] text-xs font-bold px-5 py-1.5 rounded-full tracking-wider">LE PLUS CHOISI</div>
                 <div class="flex items-center justify-between mb-6">
@@ -170,9 +191,10 @@
                     <span class="px-4 py-1 text-xs font-medium bg-[#D4AF77]/10 text-[#D4AF77] rounded-full">L’OPÉRATION</span>
                 </div>
                 <div class="mb-8">
-                    <span class="text-6xl font-semibold tracking-tighter">2000</span>
+                    <span class="text-6xl font-semibold tracking-tighter">2500</span>
                     <span class="text-white/60">€</span>
                 </div>
+
                 <div class="flex-1 space-y-3 text-[15px]">
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Tout ce qui est dans LAB</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Application Android Flutter complète</div>
@@ -180,17 +202,30 @@
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Messages WhatsApp automatisés</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> 3 mois de support + 2 optimisations</div>
                 </div>
+
+                <div class="mt-6 pt-5 border-t border-white/10">
+                    <p class="font-semibold text-sm mb-2">Temps de travail estimé : ~70 heures</p>
+                    <div class="text-[13px] text-white/70 leading-snug">
+                        • Analyse & stratégie : 6h<br>
+                        • Application Android Flutter : 25h<br>
+                        • Dashboard admin avancé : 15h<br>
+                        • Automatisations WhatsApp : 10h<br>
+                        • Design + tests & formation : 14h
+                    </div>
+                </div>
             </div>
 
+            <!-- EMPIRE -->
             <div class="premium-card glass rounded-3xl p-8 border border-white/10 flex flex-col">
                 <div class="flex items-center justify-between mb-6">
                     <span class="text-4xl font-semibold tracking-tighter">EMPIRE</span>
                     <span class="px-4 py-1 text-xs font-medium bg-white/10 rounded-full">LA DOMINATION</span>
                 </div>
                 <div class="mb-8">
-                    <span class="text-6xl font-semibold tracking-tighter">3000</span>
+                    <span class="text-6xl font-semibold tracking-tighter">4000</span>
                     <span class="text-white/60">€</span>
                 </div>
+
                 <div class="flex-1 space-y-3 text-[15px]">
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Tout ce qui est dans COOK</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Création de contenus visuels</div>
@@ -198,10 +233,117 @@
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Automatisations avancées</div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Accès prioritaire & évolutions continues</div>
                 </div>
+
+                <div class="mt-6 pt-5 border-t border-white/10">
+                    <p class="font-semibold text-sm mb-2">Temps de travail estimé : ~110 heures</p>
+                    <div class="text-[13px] text-white/70 leading-snug">
+                        • Analyse stratégique + appel : 8h<br>
+                        • Application + dashboard avancé : 30h<br>
+                        • Création contenus visuels : 15h<br>
+                        • Automatisations & stratégie : 25h<br>
+                        • Design premium + accompagnement : 32h
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
+    <!-- SECTION SUPPORT & MAINTENANCE -->
+    <div id="support" class="max-w-7xl mx-auto px-8 py-16">
+        <div class="text-center mb-12">
+            <div class="text-[#67E8F9] text-sm tracking-[3px] font-semibold mb-3">APRÈS LA LIVRAISON</div>
+            <h2 class="text-5xl md:text-6xl font-bold tracking-tighter">Support & Maintenance</h2>
+            <p class="mt-4 text-xl text-white/70 max-w-[600px] mx-auto">
+                Garde ton système à jour et performant sur le long terme.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+
+            <!-- BASIC -->
+            <div class="glass rounded-3xl p-8 border border-white/10 flex flex-col">
+                <div class="mb-6">
+                    <span class="text-3xl font-semibold">Basic</span>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="flex items-baseline gap-x-2">
+                        <span class="text-5xl font-semibold tracking-tighter">49</span>
+                        <span class="text-white/60">€ / mois</span>
+                    </div>
+                    <div class="text-sm text-white/60 mt-1">ou <span class="font-medium">490 € / an</span> <span class="text-[#D4AF77]">(2 mois offerts)</span></div>
+                </div>
+
+                <div class="flex-1 space-y-3 text-[15px]">
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Mises à jour de sécurité</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Corrections de bugs mineurs</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Support par email</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Temps de réponse sous 72h</div>
+                </div>
+
+                <a href="#contact" class="mt-8 block text-center py-4 rounded-2xl border border-white/30 hover:bg-white/5 font-medium transition-all">Choisir Basic</a>
+            </div>
+
+            <!-- STANDARD -->
+            <div class="glass rounded-3xl p-8 border-2 border-[#D4AF77] flex flex-col relative">
+                <div class="absolute -top-3.5 right-7 bg-[#D4AF77] text-[#0A0A0A] text-xs font-bold px-5 py-1.5 rounded-full tracking-wider">RECOMMANDÉ</div>
+                
+                <div class="mb-6">
+                    <span class="text-3xl font-semibold">Standard</span>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="flex items-baseline gap-x-2">
+                        <span class="text-5xl font-semibold tracking-tighter">89</span>
+                        <span class="text-white/60">€ / mois</span>
+                    </div>
+                    <div class="text-sm text-white/60 mt-1">ou <span class="font-medium">890 € / an</span> <span class="text-[#D4AF77]">(2 mois offerts)</span></div>
+                </div>
+
+                <div class="flex-1 space-y-3 text-[15px]">
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Tout ce qui est dans Basic</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Jusqu’à 2h de modifications par mois</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Support prioritaire</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Temps de réponse sous 48h</div>
+                </div>
+
+                <a href="#contact" class="mt-8 block text-center py-4 bg-[#D4AF77] text-[#0A0A0A] rounded-2xl font-semibold hover:bg-[#E8C99A] transition-all">Choisir Standard</a>
+            </div>
+
+            <!-- PREMIUM -->
+            <div class="glass rounded-3xl p-8 border border-white/10 flex flex-col">
+                <div class="mb-6">
+                    <span class="text-3xl font-semibold">Premium</span>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="flex items-baseline gap-x-2">
+                        <span class="text-5xl font-semibold tracking-tighter">149</span>
+                        <span class="text-white/60">€ / mois</span>
+                    </div>
+                    <div class="text-sm text-white/60 mt-1">ou <span class="font-medium">1490 € / an</span> <span class="text-[#D4AF77]">(2 mois offerts)</span></div>
+                </div>
+
+                <div class="flex-1 space-y-3 text-[15px]">
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Tout ce qui est dans Standard</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Jusqu’à 5h de modifications par mois</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Support ultra-prioritaire</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Temps de réponse sous 24h</div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check text-[#67E8F9]"></i> Rapport mensuel d’activité</div>
+                </div>
+
+                <a href="#contact" class="mt-8 block text-center py-4 rounded-2xl border border-white/30 hover:bg-white/5 font-medium transition-all">Choisir Premium</a>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-8 text-sm text-white/60">
+            Besoin d’une intervention ponctuelle ? <span class="font-medium text-white">65 € / heure</span> (ou 75 € en urgence)
+        </div>
+    </div>
+
+    <!-- SECTION CE QUE J'AI DÉJÀ CONSTRUIT -->
     <div id="resultats" class="max-w-6xl mx-auto px-8 py-20">
         <div class="text-center mb-12">
             <div class="text-[#67E8F9] text-sm tracking-[10px] font-semibold mb-8">RÉSULTATS RÉELS</div>
@@ -230,7 +372,6 @@
                     </a>
                 </div>
 
-                <!-- PREVIEW MISE À JOUR -->
                 <a href="https://heisenweb.gt.tc/" target="_blank" class="group block">
                     <div class="glass rounded-2xl overflow-hidden border border-white/10 hover:border-[#67E8F9] transition-all">
                         <div class="bg-zinc-950 px-4 py-3 flex items-center gap-2 border-b border-white/10">
@@ -262,11 +403,13 @@
         </div>
     </div>
 
+    <!-- CTA FINAL -->
     <div id="contact" class="max-w-3xl mx-auto px-8 py-20 text-center">
         <h2 class="text-6xl md:text-7xl font-bold tracking-tighter">Prêt à passer à la vitesse supérieure ?</h2>
         <p class="mt-8 text-xl text-white/70">J’analyse ton business et je te montre précisément ce que je peux te construire.</p>
     </div>
 
+    <!-- Logo discret en bas de page -->
     <div class="logo-bg hidden md:block"></div>
 
     <script>
